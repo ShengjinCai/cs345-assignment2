@@ -1,0 +1,106 @@
+.custom-background-color {
+    background-color: #f4a900;
+}
+
+.header {
+    background-image: url("australiafire.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: cover;
+    min-height: 600px;
+    margin-top: 0px;
+    opacity: 1;
+}
+
+.mynavbar {
+    background-color: #f4a900;
+    font-size: 25px;
+    color: #000066;
+    font-weight: bold;
+
+}
+
+.title {
+    color: #000066;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.imagetitle{
+    color: white;
+    font-size: 50px;
+}
+
+.imagesubtitle {
+    color: white;
+    font-size: 30px;
+}
+
+.dropdowncard {
+    background-color: #f4a900;
+    
+}
+
+.calculator {
+    color: #384071;
+    font-weight: bold;
+    font-size: 25px;
+}
+.dropdownlist {
+    list-style: none;
+}
+
+
+.subtitle {
+    color:#384071;
+}
+
+.card {
+    background-color: #ff9d00;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 450px;
+    height: 400px;
+}
+
+.image {
+    width: 100%;
+    margin-top: 10px;
+    height: 230px;
+}
+
+.button {
+    background-color: #151259;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.text {
+    margin-top: 5px;
+}
+
+.regist {
+    display: none;
+    position: fixed;
+    top: 50px;
+    bottom: 50px;
+    left: 450px;
+    width: 1000px;
+    height: 1000px;
+    background-color:rgb(13, 13, 57);
+    color: white;
+    margin:auto;
+}
+
+.close {
+    background-color: white;
+    color:#384071;
+    font-size: bold;
+}
+
+.submitbutton {
+    margin:auto;
+    display: grid;
+}

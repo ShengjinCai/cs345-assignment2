@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title of the Webpage-->
+    <title>Carbon Tiptoe</title>
+</head>
+<body class="custom-background-color">
+    <!--navbar-->
+    <div class="w3-container w3-bar w3-wide mynavbar">
+        <a href="#home" class="w3-bar-item w3-button title">Carbon Tiptoe</a>
+        <div class="w3-right w3-hide-small">
+
+            <!--About us-->
+            <a href="" class="w3-bar-item w3-button w3-hover-blue-gray">About Us</a>
+
+            <!--Calculators & dropdown-->
+            <div class="w3-dropdown-hover dropdownlist">
+                <button class="w3-button w3-hover-blue-gray">Tools</button> 
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 dropdowncard">
+                    <a href="" class="w3-bar-item w3-button calculator">Tranportation</a>
+                    <a href="" class="w3-bar-item w3-button calculator">Household</a>
+                    <a href="" class="w3-bar-item w3-button calculator">Overhead</a>
+                    <a href="" class="w3-bar-item w3-button calculator">Food & Drink</a>
+                </div>
+            </div>
+            <!--Other buttons-->   
+            <a href="" class="w3-bar-item w3-button w3-hover-blue-gray">Rank</a> 
+            <a href="" class="w3-bar-item w3-button w3-hover-blue-gray">Contact Us</a>
+            </div> 
+            <div id="trigger-modal">
+                <button class="w3-button w3-bar-item w3-right w3-hover-blue-gray" onclick="openForm()"> Register </button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <!--Main part-->
+    <!--Intro-->
+    <!--background image-->
+    <div class="w3-display-container w3-wide">
+        <header class="w3-image header">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="w3-center imagetitle"><b>Carbon Tiptoe</b></div>
+            <br>
+            <div class="w3-center imagesubtitle">We are trying to raise people's awareness of calculating</div>
+            <div class="w3-center imagesubtitle">their carbon footprints in a fun way.</div>
+        </header>
+    </div>
+    <!--Clickable stuff-->
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-col s3 m3 l3">
+                <div class="w3-container card">
+                    <img src="volunteers.png" alt="volunteers" class="image">
+                    <p class="text">We've made many achievement in turning your efforts in saving the environment from digital numbers into physical actions.</p>
+                    <button class="w3-button w3-margin-bottom button">Discover More</button>
+                </div> 
+            </div>
+        
+            <div class="w3-col s3 m3 l3">
+                <div class="w3-container card">
+                    <img src="instruction.jpeg" alt="instruction" class="image">
+                    <p class="text">Feeling curious about our webpage? Well, here are some instructions on how to use the different types of calculators and explaination to Carbon Energy.</p>
+                    <button class="w3-button w3-margin-bottom button">Discover More</button>
+                </div>
+            </div>
+
+            <div class="w3-col s3 m3 l3">
+                <div class="w3-container card">
+                    <img src="friends.webp" alt="friends" class="image">
+                    <p class="text">Rank your grades of saving carbon footprint with your families or friends, even in your community or area!</p>
+                    <button class="w3-button w3-margin-bottom button">Discover More</button>
+                </div>
+            </div>
+
+            <div class="w3-col s3 m3 l3">
+                <div class="w3-container card">
+                    <img src="emails.jpeg" alt="emails" class="image">
+                    <p class="text">If you find out more interesting opportunities or programs that could help us to do more for the environment, feel free to contact us.</p>
+                    <button class="w3-button w3-margin-bottom button">Discover More</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--Registration Form-->
+    <div class="regist" id="regist">
+        <div class="w3-container">
+            <span class="w3-button close" onclick="closeForm()">&times;</span>
+            <div class="w3-col w3-padding-large" id="ct-form">
+                <form>
+                    <div id="userDetails">
+                        <h3 class="w3-center">User Details</h3>
+                        <lable>Given Name</lable>
+                        <input type="text" class="w3-input" placeholder="Please enter your first name here">
+                        <label>Surname</lable>
+                        <input type="text" class="w3-input" placeholder="Please enter your last name here">
+                        <lable>Username</lable>
+                        <input type="text" class="w3-input" placeholder="Please enter your preferred username here">
+                        <lable>Password</lable>
+                        <input type="password" class="w3-input" placeholder="The password has to have length between 12 to 36 with letters and numbers">
+                    </div>
+                    <hr>
+                    <div id="addresses">
+                        <h3 class="w3-center">Addresses</h3>
+                        <lable>Home Address</lable>
+                        <input type="text" class="w3-input" placeholder="Please enter the address to your house here">
+                        <lable>Work Address</lable>
+                        <input type="text" class="w3-input" placeholder="Please enter the address of your workplace here">
+                    </div>
+                    <hr>
+                    <div id="contacts">
+                        <h3 class="w3-center">Contacts</h3>
+                        <lable>Mobile Number</lable>
+                        <input type="text" class="w3-input" placeholder="Please enter your valid mobile number">
+                        <lable>Email Address</lable>
+                        <input type="email" class="w3-input" placeholder="Please enter your email address">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="w3-button w3-white submitbutton">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JavaScript-->
+<script scr="index.js">
+
+	function openForm(){
+		document.getElementById('regist').style.display='block';
+	}
+
+    function closeForm(){
+		document.getElementById('regist').style.display='none';
+	}
+</script>
+
+</body>
+</html>
